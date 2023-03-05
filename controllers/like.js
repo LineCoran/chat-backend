@@ -1,0 +1,1 @@
+export const Like = (res, req) => req.send("Work!");

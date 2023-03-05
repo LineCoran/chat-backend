@@ -1,0 +1,1 @@
+export const Comment = (res, req) => req.send("Work!");

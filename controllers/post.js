@@ -1,0 +1,1 @@
+export const Post = (res, req) => req.send("Work!");

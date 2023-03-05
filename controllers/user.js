@@ -1,0 +1,1 @@
+export const User = (res, req) => req.send("Work!");
