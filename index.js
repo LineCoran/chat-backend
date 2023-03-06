@@ -5,11 +5,15 @@ import postRouters from './routes/posts.js';
 import commentRouters from './routes/comments.js';
 import likeRouters from './routes/likes.js';
 import authRouters from './routes/auth.js';
+import cors from "cors";
+import cookieParser from 'cookie-parser';
 
 const app = express();
 const PORT = 4000;
 
 app.use(express.json());
+app.use(cors());
+app.use(cookieParser());
 
 app.use('/users', userRouters);
 app.use('/posts', postRouters);
