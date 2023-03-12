@@ -5,7 +5,6 @@ export const getPosts = (req, res) => {
 
   const token = req.cookies.accessToken;
   const userId = req.params.userId;
-  console.log('userId: ',userId);
 
   if (!token) return res.status(401).json("Not logged in!");
   jwt.verify(token, "secretkey", (err, userInfo) => {

@@ -5,6 +5,7 @@ import postRouters from './routes/posts.js';
 import commentRouters from './routes/comments.js';
 import likeRouters from './routes/likes.js';
 import authRouters from './routes/auth.js';
+import relationshipRouters from './routes/relationship.js';
 import cors from "cors";
 import cookieParser from 'cookie-parser';
 import multer from 'multer';
@@ -43,6 +44,7 @@ app.use('/posts', postRouters);
 app.use('/comments', commentRouters);
 app.use('/likes', likeRouters);
 app.use('/auth', authRouters);
+app.use('/relationship', relationshipRouters);
 
 app.listen(PORT, () => console.log(`Server started on port: ${PORT}`));
 
